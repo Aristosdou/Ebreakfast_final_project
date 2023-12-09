@@ -7,9 +7,9 @@ For my school project
 3. curl (maybe available on Mac already)
 
 # Quick Start (each step may take time, be patient):
-1. check out the repo 'https://github.com/iharijono/ebreakfast.git' and read README.md (this file)
+1. check out the repo 'https://github.com/Aristosdou/Ebreakfast_final_project.git' and read README.md (this file)
 ```
-git clone https://github.com/iharijono/ebreakfast.git
+git clone https://github.com/Aristosdou/Ebreakfast_final_project.git
 ```
 1. go to directory 'ebreakfast' and create a directory 'database'
 ```
@@ -50,7 +50,7 @@ if you want to delete all tables:
 mysql -h 127.0.0.1 -uroot -proot
 mysql> source sql/deinit.sql
 ```
-5. Connect to the app with the browser pointing to http://localhost:5000
+5. Connect to the app with the browser pointing to http://localhost:8765
 ```
 open http://localhost:8765
 Login with 'test' and password is 'secret'
