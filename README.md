@@ -11,12 +11,12 @@ For my school project
 ```
 git clone https://github.com/Aristosdou/Ebreakfast_final_project.git
 ```
-1. go to directory 'ebreakfast' and create a directory 'database'
+1. go to directory 'Ebreakfast_final_project' and create a directory 'database'
 ```
-cd ebreakfast
+cd Ebreakfast_final_project
 mkdir database
 ```
-2. assuming you are on directory 'ebreakfast', build the docker container (need only once unless you change the code)
+2. assuming you are on directory 'Ebreakfast_final_project', build the docker container (need only once unless you change the code)
 ```
 docker compose build --no-cache
 
