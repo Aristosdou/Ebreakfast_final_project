@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+    app:
+        container_name: ebreakfast-app
+        build: app
+        restart: always
+        environment:
+            MYSQL_HOST: db
+            MYSQL_DB: ebreakfast_db
+        ports:
+            - '8765:8765'
+        volumes:
+            - ./app:/app
+        networks:
+           - backend
+
+    db:
+        container_name: db
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: ebreakfast
+        ports:
+            - '3306:3306'
+        volumes:
+            # - ./database:/var/lib/mysql
+            # Use this option to persist the MySQL DBs in a shared volume.
+            - ./mysqldata:/var/lib/mysql:rw,delegated
+            # Use this option to persist the MySQL DBs in a data volume.
+            # - db_data:/var/lib/mysql
+        networks:
+            - backend
+
+networks:
+    backend:
+
+volumes:
+    app:
+    database:
+

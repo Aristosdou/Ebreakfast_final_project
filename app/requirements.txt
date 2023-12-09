@@ -1,0 +1,6 @@
+Flask
+Werkzeug==2.3.0
+SQLAlchemy
+sqlacodegen
+solara
+pymysql
